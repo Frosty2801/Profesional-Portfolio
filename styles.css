@@ -14,11 +14,22 @@
     --trans:  rgba(0, 53, 102, 0.521);
     --trans-2: rgba(0, 8, 20, 0.692);
     --trans-3: rgba(0, 53, 102, 0.507);
+    --pets: rgba(255, 192, 203, 0.651);
 }
 
 
 header {
     background-color: var(--trans);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    margin-bottom: 0 auto;
+    padding: 15px;
+}
+
+.header-pets {
+    background-color: var(--pets);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,6 +145,24 @@ img {
     box-shadow: 0 15px 25px;
 }
 
+.card-pets {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 200px;
+    margin: 12px auto;
+    border-radius: 15px;
+    background: var(--pets);
+    box-shadow: 0 0 20px rgba(red, green, blue, 0);
+    transition: transform 0.5s, box-shadow 0.5s;
+    color: var(--gold);
+}
+
+.card-pets:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px;
+}
+
 .cartas-contenedor{
     display: flex;
 }
@@ -145,8 +174,18 @@ footer {
     background-color: var(--trans);
     padding: 20px;
     margin-top: 30px;
-
 }
+
+.footer-pets {
+    width: 100%;
+    text-align: center;
+    font-size: 5px;
+    background-color: var(--pets);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
 
 .down {
     font-size: 12px;
