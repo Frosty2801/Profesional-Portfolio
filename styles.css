@@ -12,7 +12,7 @@
     --school-bus-yellow: #ffc300ff;
     --gold: #ffd60aff;
     --trans:  rgba(0, 53, 102, 0.521);
-    --trans-2: rgba(12, 44, 92, 0.692);
+    --trans-2: rgba(39, 66, 107, 0.692);
     --trans-3: rgba(0, 53, 102, 0.507);
     --pets: rgba(255, 192, 203, 0.651);
 }
@@ -203,6 +203,20 @@ footer {
     display: grid;
 }
 
-@media 
+@media (max-width: 600px) {
+    header {
+    flex-direction: column;
+    height: auto;
+    gap: 0.5rem;
+    }
+
+    body {
+        display: flex;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+}
 
 
